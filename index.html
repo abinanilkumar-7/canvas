@@ -20,13 +20,13 @@
   <header id="home">
     <h1>CANVAS</h1>
     <h2>Your Perfect Destination Partner</h2>
-    <div class="hamburger">
+    <div class="hamburger" id="hamburger">
     <i class="fa-solid fa-bars"></i>
   </div>
   </header>
   
 
-  <nav>
+  <nav id="nav-menu">
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#stories">Stories</a>
@@ -171,28 +171,6 @@ We are dedicated to providing the best travel experiences with personalized serv
   hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
   });
-
-
-  let index = 0;
-  document.addEventListener('DOMContentLoaded', () => {
-    const track = document.querySelector('.carousel-track');
-    const cards = document.querySelectorAll('.quote-card');
-    
-    // Set the initial position of the track
-    track.style.transform = `translateX(-${index =1 * 100}%)`;
-    
-    // Add event listeners for buttons
-    document.querySelector('.prev').addEventListener('click', () => moveSlide(-1));
-    document.querySelector('.next').addEventListener('click', () => moveSlide(1));
-  });
-
-  function moveSlide(step) {
-    const track = document.querySelector('.carousel-track');
-    const cards = document.querySelectorAll('.quote-card');
-    index = (index + step + cards.length) % cards.length;
-    track.style.transform = `translateX(-${index * 100}%)`;
-  }
-  
 </script>
 
 </body>
