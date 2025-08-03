@@ -8,13 +8,12 @@ body {
       font-family: 'Open Sans', sans-serif;
       background: #bdb47b;
       color: #222;
-       background-image: url('WhatsApp\ Image\ 2025-07-31\ at\ 20.58.38_eb69fc2a.jpg');
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        
-        width: fit-content
+      background-image: url('WhatsApp\ Image\ 2025-07-31\ at\ 20.58.38_eb69fc2a.jpg');
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: fit-content;
         
     }
     html,body {
@@ -39,30 +38,7 @@ body {
 }
 
 /* Show hamburger on small screens */
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-  }
 
-  nav {
-    display: none;
-    flex-direction: column;
-    background-color: white;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 100%;
-    text-align: center;
-    padding: 1rem 0;
-  }
-
-  nav.active {
-    display: flex;
-  }
-}
 
     header h1 {
       
@@ -432,6 +408,30 @@ body {
   color: #6e6161;
   padding-top: 10px;
 }
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: #ede4cb;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  nav.active {
+    display: flex;
+  }
+}
 @media screen and (max-width: 768px) {
   header {
     padding: 1rem;
@@ -466,6 +466,11 @@ body {
   .testimonials {
     height: auto;
     padding: 2rem 1rem;
+  }
+  .msg {
+    font-size: 1.2rem;
+    padding: 0 2rem;
+    text-align: justify;
   }
 
   .image-card {
